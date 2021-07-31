@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			投票DApp
+		</title>
+		<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/boot
+		strap.min.css' rel='stylesheet' type='text/css'>
+	</head>
+	<body class="container">
+		<h1>
+			基于智能合约投票DApp
+		</h1>
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>
+							候选人
+						</th>
+						<th>
+							票数
+						</th>
+						<th>
+							操作
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							库里
+						</td>
+						<td id="candidate-1">
+						</td>
+						<td>
+							<button onclick="voteForCandidate('Curry')" class="btnbtn-primary">
+								投票
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							汤普森
+						</td>
+						<td id="candidate-2">
+						</td>
+						<td>
+							<button onclick="voteForCandidate('Thompson')" class="btnbtn-primary">
+								投票
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							杜兰特
+						</td>
+						<td id="candidate-3">
+						</td>
+						<td>
+							<button  onclick="voteForCandidate('Durant')" class="btnbtn-primary">
+								投票
+							</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@0.20.6/dist/web3.js">
+	</script>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js">
+	</script>
+	<script src="./index.js">
+	</script>
+
+</html>
